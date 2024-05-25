@@ -9,9 +9,9 @@ for i in range(3):                  # Get my 3 locations, populate my_ships list
     my_ships.append(my_ship)
 print("Your ship coordinates are: ", my_ships)
 while my_score < 3 and computer_score < 3:
-        time.sleep(0.7)  # My turn
+        time.sleep(0.7)  
         print("                        ")
-        my_shot = input("  Fire at will! -> ")
+        my_shot = input("  Fire at will! -> ")   # My turn
         time.sleep(0.4)
         if my_shot in computer_ships:   # If my shot is within computer_ships list = HIT
             my_score += 1
